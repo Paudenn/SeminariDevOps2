@@ -6,10 +6,10 @@ class BookRoutes {
     public router: Router
     constructor() {
         this.router = Router()
-        this.routes() //This has to be written here so that the method can actually be configured when called externally.
+        this.routes()
     }
 
-    public async getBooks(req: Request, res: Response) : Promise<void> { //It returns a void, but internally it's a promise.
+    public async getBooks(req: Request, res: Response) : Promise<void> {
         const allBooks = await Book.find()
         if (allBooks.length == 0){
             res.status(404).send("There are no books yet!")
