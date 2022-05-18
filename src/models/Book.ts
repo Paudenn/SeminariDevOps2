@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import {Schema, model} from 'mongoose';
+
+import {Schema, model} from "mongoose"
 //const Editorial = mongoose.model;  To Do :)
 
 const BookSchema = new Schema({
@@ -14,4 +14,4 @@ const BookSchema = new Schema({
     sells: {type: Number, required: true},
     description: {type: String, required:true}
 })
-export default model('Book', BookSchema);
+export default model("Book", BookSchema)
