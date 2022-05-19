@@ -5,7 +5,7 @@ import Book from "../models/Book"
 class BookRoutes {
     public router: Router
     constructor() {
-        this.router = Router()
+         this.router = Router()
         this.routes()
     }
 
