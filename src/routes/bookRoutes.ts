@@ -9,7 +9,7 @@ class BookRoutes {
         this.routes()
     }
 
-    public async getBooks(req: Request, res: Response) : Promise<void> {
+     public async getBooks(req: Request, res: Response) : Promise<void> {
         const allBooks = await Book.find()
         if (allBooks.length == 0){
             res.status(404).send("There are no books yet!")
